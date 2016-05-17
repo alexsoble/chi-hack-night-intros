@@ -7,18 +7,15 @@ function makeWordShorterMaybe (word, count) {
 };
 
 function makeBubble (text, size) {
-  let label = makeWordShorterMaybe(text, size);
-  let randomColor = d3Colors[Math.floor(Math.random() * d3Colors.length)];
-  let growthFactor = Math.sqrt(size) * 50;
+  var label = makeWordShorterMaybe(text, size);
+  var randomColor = d3Colors[Math.floor(Math.random() * d3Colors.length)];
+  var growthFactor = String(Math.sqrt(size) * 50);
 
-  return `<div class='bubble-wrapper'>
-            <div class='label-text'>
-              ${label}
-            </div>
-            <div class='bubble'
-               style='width: ${growthFactor}px;
-                      height: ${growthFactor}px;
-                      background-color: ${randomColor}'>
-            </div>
-          </div>`
+  var label = "<div class='label-text'>" + label + "</div>";
+
+  var bubble = "<div class='bubble' style='width: " + growthFactor + "px;" +
+                      "height: " + growthFactor + "px;" +
+                      "background-color: " + randomColor + "'></div>";
+
+  return "<div class='bubble-wrapper'>" + label + bubble + "</div>";
 };

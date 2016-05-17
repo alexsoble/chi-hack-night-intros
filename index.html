@@ -16,12 +16,12 @@
     <div id="page-container"></div>
   </body>
   <script>
-    const intros = shuffle(Object.keys(data));
+    var intros = shuffle(Object.keys(data));
 
     for (i = 0; i < intros.length; i++) {
-      const intro = intros[i];
-      const size = data[intro];
-      const bubble = makeBubble(intro, size);
+      var intro = intros[i];
+      var size = data[intro];
+      var bubble = makeBubble(intro, size);
       document.getElementById('page-container').innerHTML += bubble;
     };
   </script>
