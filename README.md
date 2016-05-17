@@ -29,3 +29,9 @@ See `notes` folder for data.
 Note that these categories and self-descriptive terms are non-exclusive. For example, someone could be both a cofounder + web developer, grad student + data scientist, activist + designer.
 
 But at the Hack Night, people generally introduce themselves using one short descriptor.
+
+# Thank you
+
+Thank you d3!
+
+Pretty colors borrowed from __[d3.scale.category20()](https://github.com/d3/d3/wiki/Ordinal-Scales#categorical-colors)__.
