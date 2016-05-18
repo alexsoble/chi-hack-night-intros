@@ -2,7 +2,8 @@ function makeWordShorterMaybe (word, count) {
   if (count > 2) {
     return word;
   } else {
-    return word.split(' ')[0];
+    var words = word.split(' ');
+    return [words[0], words[1]].join(' ');
   }
 };
 
