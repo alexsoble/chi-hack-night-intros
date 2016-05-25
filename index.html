@@ -1,38 +1,7 @@
-<!DOCTYPE html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <script src="chihacknight-intros-may-24-2016.js"></script>
-    <script src="colors.js"></script>
-    <script src="helpers.js"></script>
-    <script src="vendor.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
-  <body>
-    <div id="title-area">
-      <h1 id="title">
-        How people introduced themselves
-      </h1>
-      at Chi Hack Night
-      <a href="https://chihacknight.org/events/2016/05/24/greater-good-studio.html"><strong>#206</strong></a>
-      <br/>
-      <a href="205.html">#205</a> |
-      <a href="204.html">#204</a>
-      <br/>
-      <a href="https://github.com/alexsoble/chi-hack-night-intros/tree/gh-pages/notes">Data here,</a>
-      <a href="https://github.com/alexsoble/chi-hack-night-intros/tree/gh-pages/">code here.</a>
-    </div>
-    <div id="page-container"></div>
-  </body>
-  <script>
-    var intros = shuffle(Object.keys(data));
-
-    for (i = 0; i < intros.length; i++) {
-      var intro = intros[i];
-      var size = data[intro];
-      var bubble = makeBubble(intro, size);
-      document.getElementById('page-container').innerHTML += bubble;
-    };
-  </script>
-</html>
+---
+layout: default
+title: "Who is at Chi Hack Night?"
+event_number: "206"
+event_date: "may-24-2016"
+event_link: "https://chihacknight.org/events/2016/05/24/greater-good-studio.html"
+---
