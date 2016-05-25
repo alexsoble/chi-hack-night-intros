@@ -1,0 +1,26 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#title-area {
+  margin: 20px;
+}
+
+#title {
+  font-size: 27px;
+  margin: 0 0 8px 0;
+}
+
+.bubble-wrapper {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+}
+
+.label-text {
+  margin-bottom: 5px;
+}
+
+.bubble {
+  margin: auto auto;
+}
